@@ -7,9 +7,7 @@ variable "bucket_name" {
   default = "my-static-website-bucket-wokkali"
 }
 
-locals {
-  origin_id = "s3-static-website-origin"
-}
+
 
 resource "aws_s3_bucket" "staticbucket" {
   bucket = var.bucket_name
